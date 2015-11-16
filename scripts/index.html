@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>配置你的机器人</title>
+<script language=javascript>
+
+function submit()
+{
+    var ssid = document.getElementById("ssid").value;
+    var password = document.getElementById("password").value;
+    window.location.href = "connect?" + "ssid=" + ssid + "&password=" + password;
+}
+
+</script>
+</head>
+
+<body>
+
+<form name = "wifi" action="connect" method="get">
+WIFI名称
+<input type="text" name="ssid">
+<br />
+WIFI密码
+<input type="password" name="password">
+<br />
+<input type="button" onclick="submit();" value="确定">
+</form>
+
+</body>
+</html>

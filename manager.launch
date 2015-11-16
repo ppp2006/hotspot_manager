@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="qbo_config_manager" name="qbo_config_manager" type="config_manager.py" output="screen"/>
+    <node pkg="qbo_config_manager" name="config_webui" type="config2.py" output="screen"/>
+</launch>
